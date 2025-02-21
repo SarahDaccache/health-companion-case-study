@@ -1,17 +1,23 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 20;
+    margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #E9EFEC; /* Light background for a soft, clean look */
+    color: #16423C; /* Primary dark green for readability */
 }
 
+/* Header Styles */
 header {
-    background: pink;
+    background: #16423C; /* Dark Green */
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
@@ -19,31 +25,83 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    background: #6A9C89; /* Muted Green Hover Effect */
+}
+
+/* Section Styling */
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 900px;
     background: white;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #6A9C89; /* Accent left border */
 }
 
-ul, ol {
-    padding-left: 20px;
+/* Button Styles */
+button, .btn {
+    background: #6A9C89; /* Muted Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+button:hover, .btn:hover {
+    background: #16423C; /* Darker Green for hover */
+}
+
+/* Image Styling */
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 10px auto;
+    border-radius: 10px; /* Soft rounded edges for aesthetics */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
-    background: #222;
+    background: #16423C; /* Dark Green */
     color: white;
     margin-top: 20px;
+}
+
+/* User Personas Styling */
+.persona {
+    background: #C4DAD2; /* Soft Mint Background */
+    padding: 15px;
+    border-left: 5px solid #16423C;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* User Journey, Storyboard, User Flow sections */
+section img {
+    border: 2px solid #C4DAD2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Links */
+a {
+    color: #16423C; /* Primary Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #6A9C89; /* Secondary Green */
 }
