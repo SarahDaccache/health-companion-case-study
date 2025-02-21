@@ -8,32 +8,47 @@ body {
     color: #16423C;
 }
 
-/* Header Styles */
+/* Header Styles - Sleek & Cute */
 header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background: #16423C;
+    background: rgba(255, 255, 255, 0.8); /* Light & slightly transparent */
+    backdrop-filter: blur(10px); /* Modern blur effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    padding: 10px 0; /* Reduce padding */
     z-index: 1000;
-}
-body {
-    padding-top: 70px; 
+    transition: 0.3s;
 }
 
-
+/* Navigation */
 nav {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
 nav a {
-    margin: 0 15px;
-    color: white;
+    font-size: 14px; /* Smaller & modern */
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 20px; /* Rounded edges */
     text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
+    color: #16423C; /* Dark green text */
     transition: 0.3s;
+}
+
+/* Softer Hover Effect */
+nav a:hover {
+    background: #C4DAD2; /* Light pastel green */
+    color: #16423C;
+}
+
+/* Reduce Top Padding in Body */
+body {
+    padding-top: 50px;
 }
 
 nav a:hover {
