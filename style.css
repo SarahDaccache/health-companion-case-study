@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; /* More modern & friendly */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,18 +8,19 @@ body {
     color: #16423C;
 }
 
-/* Header Styles - Sleek & Cute */
+/* Header Styles - Soft & Modern */
 header {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.8); /* Light & slightly transparent */
-    backdrop-filter: blur(10px); /* Modern blur effect */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
-    padding: 10px 0; /* Reduce padding */
+    background: rgba(240, 248, 245, 0.9); /* Soft pastel background */
+    backdrop-filter: blur(12px); /* Light blur for a modern look */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08); /* Floating effect */
+    padding: 8px 0; /* Less padding for a sleek look */
+    border-bottom: 2px solid #C4DAD2; /* Soft pastel border */
     z-index: 1000;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Navigation */
@@ -27,32 +28,31 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
+/* Navigation Links - Cute & Minimal */
 nav a {
-    font-size: 14px; /* Smaller & modern */
+    font-size: 13px;
     font-weight: 600;
-    padding: 6px 10px;
-    border-radius: 20px; /* Rounded edges */
+    padding: 6px 14px;
+    border-radius: 20px; /* Rounded links */
     text-decoration: none;
-    color: #16423C; /* Dark green text */
-    transition: 0.3s;
+    color: #16423C;
+    background: rgba(255, 255, 255, 0.7); /* Soft bubble effect */
+    transition: all 0.3s ease-in-out;
 }
 
-/* Softer Hover Effect */
+/* Hover Effect - Softer & Modern */
 nav a:hover {
     background: #C4DAD2; /* Light pastel green */
     color: #16423C;
+    transform: scale(1.05); /* Tiny bounce effect */
 }
 
 /* Reduce Top Padding in Body */
 body {
-    padding-top: 50px;
-}
-
-nav a:hover {
-    background: #6A9C89;
+    padding-top: 45px;
 }
 
 /* Section Styling */
@@ -61,21 +61,22 @@ section {
     margin: 20px auto;
     max-width: 900px;
     background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #6A9C89; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #6A9C89;
 }
 
 /* Button Styles */
 button, .btn {
-    background: #6A9C89; 
+    background: #6A9C89;
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* More rounded for a soft look */
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover, .btn:hover {
@@ -88,50 +89,55 @@ img {
     height: auto;
     display: block;
     margin: 10px auto;
-    border-radius: 10px; 
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
 }
 
 img:hover {
     transform: scale(1.05);
-    transition: 0.3s;
 }
-
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #16423C; 
+    padding: 12px;
+    background: #16423C;
     color: white;
+    font-size: 14px;
     margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-
+/* Persona Box */
 .persona {
-    background: #C4DAD2; 
+    background: #C4DAD2;
     padding: 15px;
     border-left: 5px solid #16423C;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
-
+/* Section Images */
 section img {
     border: 2px solid #C4DAD2;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 5px;
 }
 
+/* Links */
 a {
     color: #16423C;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #6A9C89; 
+    color: #6A9C89;
 }
 
+/* Color Palette Display */
 .color-container {
     display: flex;
     justify-content: center;
@@ -149,6 +155,29 @@ a:hover {
     color: white;
     font-weight: bold;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Make Small Screens Look Better */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+    nav a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    footer {
+        font-size: 12px;
+    }
 }
