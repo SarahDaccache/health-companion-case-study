@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,11 +10,17 @@ body {
 
 /* Header Styles */
 header {
-    background: #16423C; 
-    color: white;
-    padding: 20px;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #16423C;
+    z-index: 1000;
 }
+body {
+    padding-top: 70px; 
+}
+
 
 nav {
     margin-top: 10px;
@@ -69,6 +75,12 @@ img {
     margin: 10px auto;
     border-radius: 10px; 
 }
+
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
 
 /* Footer Styles */
 footer {
